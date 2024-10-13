@@ -33,6 +33,15 @@
 
 <link rel="canonical" href="{{ .Permalink }}"/>
 
+{{- if .IsTranslated -}}
+    {{ range first 1 .AllTranslations }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{ end }}
+    {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+    {{ end }}
+{{ end }}
+
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
 

@@ -51,5 +51,9 @@
 {{ if .Site.Params.umami.enable }}
 {{ partial "umami.html" . }}
 {{ end }}
+
+{{ if .Site.Params.plausible.enable }}
+{{ partial "plausible.html" . }}
 {{ end }}
 
+{{ end }}

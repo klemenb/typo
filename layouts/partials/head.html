@@ -20,10 +20,14 @@
 {{- end }}
 
 <title>
-    {{ if .IsHome }}
-    {{ site.Title }}
+    {{ if and .IsHome site.Params.HeadTitle }}
+        {{ site.Params.HeadTitle }}
+    {{ else if .IsHome }}
+        {{ site.Title }}
+    {{ else if site.Params.HeadTitle }}
+        {{ printf "%s | %s" .Title site.Params.HeadTitle }}
     {{ else }}
-    {{ printf "%s | %s" .Title site.Title }}
+        {{ printf "%s | %s" .Title site.Title }}
     {{ end }}
 </title>
 

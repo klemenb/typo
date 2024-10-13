@@ -1,1 +1,20 @@
-/* Place custom css here */
+.header p.small {
+    font-size: 0.9em;   
+}
+
+.highlight pre {
+    text-wrap: wrap;
+}
+
+.highlight pre code {
+    font-size: 0.7em;
+}
+
+.social-icons {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #666;
+}
+
+footer p {
+    opacity: 0.2;
+}

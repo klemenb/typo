@@ -42,6 +42,13 @@ footer {
     max-height: 2rem;
 }
 
+@media (max-width: 900px) {
+    footer {
+        margin-top: 48px;
+    }
+}
+
 footer p {
     opacity: 0.2;
 }
+

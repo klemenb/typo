@@ -1,3 +1,7 @@
+.header .header-title {
+    margin-top: 16px;
+}
+
 .header p.small {
     font-size: 0.9em;   
 }
@@ -10,9 +14,32 @@
     font-size: 0.7em;
 }
 
+.list-container {
+    padding-bottom: 0;
+}
+
+.list-container .line-date {
+    text-align: left;
+    min-width: 100px;
+}
+
+.content h1 {
+    margin-top: 32px;
+}
+
+.content hr {
+    margin: 40px 0 32px 0;
+}
+
 .social-icons {
-    padding-bottom: 50px;
-    border-bottom: 1px solid #666;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 0;
+    justify-content: center;
+    max-height: 2rem;
 }
 
 footer p {
